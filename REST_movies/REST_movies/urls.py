@@ -22,4 +22,6 @@ urlpatterns = [
     url(r'^admin/$', admin.site.urls),
     url(r'^movies/$', MoviesView.as_view()),
     url(r'^movie/(?P<id>(\d)+)/$', MovieView.as_view()),
+    url(r'^people/$', PeopleView.as_view()),
+    url(r'^person/(?P<id>(\d)+)/$', PersonView.as_view()),
 ]
